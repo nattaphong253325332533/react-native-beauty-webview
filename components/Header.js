@@ -62,7 +62,7 @@ export const Header = ({
             },
           ]}>
           {title}
-        </Text>
+        </Text> 
         {/* <Text numberOfLines={1} style={[styles.subtitle]}>
           {url}
         </Text> */}
