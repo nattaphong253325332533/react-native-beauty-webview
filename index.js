@@ -27,7 +27,8 @@ const BeautyWebView = ({
   menuIcon,
   onGoBack,
   onGoForward,
-  incognito
+  incognito,
+  cssHead
 }) => {
   const [progressRef, setProgressRef] = useState(null);
   const [backgroundProgressRef, setBackgroundProgressRef] = useState(null);
@@ -82,7 +83,7 @@ const BeautyWebView = ({
 
   return (
     <Modal visible={visible} transparent={false} animationType={animationType}>
-      <SafeAreaView style={[styles.container, { backgroundColor: backgroundColor }]}>
+      <SafeAreaView style={[styles.container,cssHead, { backgroundColor: backgroundColor }]}>
         <Header
           backgroundColor={headerBackground}
           contentType={headerContent}
