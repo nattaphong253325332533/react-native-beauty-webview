@@ -29,6 +29,7 @@ const BeautyWebView = ({
   onGoForward,
   incognito,
   cssHead,
+  onShouldStartLoadWithRequest,
   setSupportMultipleWindows
 }) => {
   const [progressRef, setProgressRef] = useState(null);
@@ -123,6 +124,7 @@ const BeautyWebView = ({
           onLoadStart={onLoadStart}
           onNavigationStateChange={onNavigationStateChange}
           incognito={incognito}
+          onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
           setSupportMultipleWindows={setSupportMultipleWindows}
         />
       </SafeAreaView>
