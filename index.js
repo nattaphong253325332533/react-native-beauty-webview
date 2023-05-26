@@ -11,7 +11,7 @@ const BeautyWebView = ({
   backgroundColor,
   headerContent, // 'dark' || 'light', default 'dark'
   headerBackground, // default #fff
-  url, // Required
+  url, // Required 
   progressColor,
   progressHeight,
   loadingText,
