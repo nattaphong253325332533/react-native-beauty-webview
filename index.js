@@ -30,7 +30,8 @@ const BeautyWebView = ({
   incognito,
   cssHead,
   onShouldStartLoadWithRequest,
-  setSupportMultipleWindows
+  setSupportMultipleWindows,
+  onFileDownload
 }) => {
   const [progressRef, setProgressRef] = useState(null);
   const [backgroundProgressRef, setBackgroundProgressRef] = useState(null);
@@ -126,6 +127,7 @@ const BeautyWebView = ({
           incognito={incognito}
           onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
           setSupportMultipleWindows={setSupportMultipleWindows}
+          onFileDownload={onFileDownload}
         />
       </SafeAreaView>
     </Modal>
