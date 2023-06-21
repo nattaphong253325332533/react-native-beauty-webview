@@ -31,7 +31,8 @@ const BeautyWebView = ({
   cssHead,
   onShouldStartLoadWithRequest,
   setSupportMultipleWindows,
-  onFileDownload
+  onFileDownload,
+  allowsFullscreenVideo
 }) => {
   const [progressRef, setProgressRef] = useState(null);
   const [backgroundProgressRef, setBackgroundProgressRef] = useState(null);
@@ -128,6 +129,7 @@ const BeautyWebView = ({
           onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
           setSupportMultipleWindows={setSupportMultipleWindows}
           onFileDownload={onFileDownload}
+          allowsFullscreenVideo={allowsFullscreenVideo}
         />
       </SafeAreaView>
     </Modal>
